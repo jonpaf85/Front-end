@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b4ac76769654723b8999a69aaf8b4c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+
+</head>
+<body>
+            <div>
+              <h1 style = "color:blue; background: linear-gradient(to right, #237A57, #093028);text-align: center; padding-top: 10px"> <a style = "color :blue" href = "index.html"> Back to home page </a>
+                <p style = "color: red;text-align: right; padding-right: 25px;font-size: 25px"> Layer Control </p></h1>
+            </div>
+            <div class="folium-map" id="map_9b4ac76769654723b8999a69aaf8b4c3" ></div>
+
+</body>
+<script>
+
+            var map_9b4ac76769654723b8999a69aaf8b4c3 = L.map(
+                "map_9b4ac76769654723b8999a69aaf8b4c3",
+                {
+                    center: [40.0, -40.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+
+
+
+
+            var tile_layer_8ce150a256494b89a28144b0a97ba801 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9b4ac76769654723b8999a69aaf8b4c3);
+
+
+            var feature_group_4949545d6c7f40f0b9628d5074b4d71b = L.featureGroup(
+                {}
+            ).addTo(map_9b4ac76769654723b8999a69aaf8b4c3);
+
+
+            var circle_marker_a341fcf7e0614354b607fa2a03fcec75 = L.circleMarker(
+                [43.37, -2.99],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4949545d6c7f40f0b9628d5074b4d71b);
+
+
+        var popup_5ea3fcb003c84090ab809194544abe0a = L.popup({"maxWidth": "100%"});
+
+
+            var html_b0a911ddcb1749df9b2b18625a384cd5 = $(`<div id="html_b0a911ddcb1749df9b2b18625a384cd5" style="width: 100.0%; height: 100.0%;">Berango Lived in 2007</div>`)[0];
+            popup_5ea3fcb003c84090ab809194544abe0a.setContent(html_b0a911ddcb1749df9b2b18625a384cd5);
+
+
+        circle_marker_a341fcf7e0614354b607fa2a03fcec75.bindPopup(popup_5ea3fcb003c84090ab809194544abe0a)
+        ;
+
+
+
+
+            var circle_marker_317ef62bebf04df6b821e453486779d3 = L.circleMarker(
+                [57.176, -2.10125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4949545d6c7f40f0b9628d5074b4d71b);
+
+
+        var popup_52890a205e2b4d5589afce056c956dd8 = L.popup({"maxWidth": "100%"});
+
+
+            var html_734359330463471d9e0c220ad9b5be57 = $(`<div id="html_734359330463471d9e0c220ad9b5be57" style="width: 100.0%; height: 100.0%;">Abeerdeen Erasmus Internship 2007</div>`)[0];
+            popup_52890a205e2b4d5589afce056c956dd8.setContent(html_734359330463471d9e0c220ad9b5be57);
+
+
+        circle_marker_317ef62bebf04df6b821e453486779d3.bindPopup(popup_52890a205e2b4d5589afce056c956dd8)
+        ;
+
+
+
+
+            var circle_marker_69f74cc03e8944bbbbee64e369e568b1 = L.circleMarker(
+                [38.4, -0.44],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4949545d6c7f40f0b9628d5074b4d71b);
+
+
+        var popup_394f13569e0241d8b02226c8643e0f20 = L.popup({"maxWidth": "100%"});
+
+
+            var html_e7ebe30a93604493bbd313140f5d5da4 = $(`<div id="html_e7ebe30a93604493bbd313140f5d5da4" style="width: 100.0%; height: 100.0%;">Alicante Lived in 2009</div>`)[0];
+            popup_394f13569e0241d8b02226c8643e0f20.setContent(html_e7ebe30a93604493bbd313140f5d5da4);
+
+
+        circle_marker_69f74cc03e8944bbbbee64e369e568b1.bindPopup(popup_394f13569e0241d8b02226c8643e0f20)
+        ;
+
+
+
+
+            var circle_marker_bf9b05b7ddbe4f209f0bbfd8b4785c0f = L.circleMarker(
+                [51.44, -2.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4949545d6c7f40f0b9628d5074b4d71b);
+
+
+        var popup_9493d0345dd0445eb27693c5879963f2 = L.popup({"maxWidth": "100%"});
+
+
+            var html_73fd31ae2a7a4204bcbb82dc41b98230 = $(`<div id="html_73fd31ae2a7a4204bcbb82dc41b98230" style="width: 100.0%; height: 100.0%;">Bristol Lived in 2014</div>`)[0];
+            popup_9493d0345dd0445eb27693c5879963f2.setContent(html_73fd31ae2a7a4204bcbb82dc41b98230);
+
+
+        circle_marker_bf9b05b7ddbe4f209f0bbfd8b4785c0f.bindPopup(popup_9493d0345dd0445eb27693c5879963f2)
+        ;
+
+
+
+
+            var feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2 = L.featureGroup(
+                {}
+            ).addTo(map_9b4ac76769654723b8999a69aaf8b4c3);
+
+
+            var circle_marker_b051daf3145e42dda7e3bbedb5949d24 = L.circleMarker(
+                [36.721, -4.4209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_d8f1e045f7624e028738779cba610494 = L.popup({"maxWidth": "100%"});
+
+
+            var html_a821f4608c144cb6b077557ebe188dfa = $(`<div id="html_a821f4608c144cb6b077557ebe188dfa" style="width: 100.0%; height: 100.0%;">Malaga Spanish Biochemistry meeting SEBBM 2007</div>`)[0];
+            popup_d8f1e045f7624e028738779cba610494.setContent(html_a821f4608c144cb6b077557ebe188dfa);
+
+
+        circle_marker_b051daf3145e42dda7e3bbedb5949d24.bindPopup(popup_d8f1e045f7624e028738779cba610494)
+        ;
+
+
+
+
+            var circle_marker_b8a5e399a6454afaab5d891395af02ad = L.circleMarker(
+                [40.86, 14.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_287e3e3d5f4a4d74bd32c59ee0cfb4ab = L.popup({"maxWidth": "100%"});
+
+
+            var html_31dc9879a7834fbb927e75e0f392db2d = $(`<div id="html_31dc9879a7834fbb927e75e0f392db2d" style="width: 100.0%; height: 100.0%;">Napoli Neuroscience workshop 2008</div>`)[0];
+            popup_287e3e3d5f4a4d74bd32c59ee0cfb4ab.setContent(html_31dc9879a7834fbb927e75e0f392db2d);
+
+
+        circle_marker_b8a5e399a6454afaab5d891395af02ad.bindPopup(popup_287e3e3d5f4a4d74bd32c59ee0cfb4ab)
+        ;
+
+
+
+
+            var circle_marker_3a7719c596a545f0b1d8f7c38d652745 = L.circleMarker(
+                [41.119, 1.24],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_791ac254d831457b8891684a98c8775c = L.popup({"maxWidth": "100%"});
+
+
+            var html_5e18584c43db477387216aa2181c1ca5 = $(`<div id="html_5e18584c43db477387216aa2181c1ca5" style="width: 100.0%; height: 100.0%;">Tarragona Spanish Neuroscience meeting 2009</div>`)[0];
+            popup_791ac254d831457b8891684a98c8775c.setContent(html_5e18584c43db477387216aa2181c1ca5);
+
+
+        circle_marker_3a7719c596a545f0b1d8f7c38d652745.bindPopup(popup_791ac254d831457b8891684a98c8775c)
+        ;
+
+
+
+
+            var circle_marker_5d1990349f5849de8a16efc6cb5d95f3 = L.circleMarker(
+                [40.9705, -5.661],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_039d9c86364944eb902e5706b3de38d6 = L.popup({"maxWidth": "100%"});
+
+
+            var html_ea13b52a00874453979c9305dae3de1e = $(`<div id="html_ea13b52a00874453979c9305dae3de1e" style="width: 100.0%; height: 100.0%;">Salamanca Spanish Neuroscience meeting 2011</div>`)[0];
+            popup_039d9c86364944eb902e5706b3de38d6.setContent(html_ea13b52a00874453979c9305dae3de1e);
+
+
+        circle_marker_5d1990349f5849de8a16efc6cb5d95f3.bindPopup(popup_039d9c86364944eb902e5706b3de38d6)
+        ;
+
+
+
+
+            var circle_marker_4a8a0cb97e784a98ac32d8308c84479a = L.circleMarker(
+                [45.81, 9.07],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_2510077524524505b7ffbf38f93f5923 = L.popup({"maxWidth": "100%"});
+
+
+            var html_aa76701baed94501a2b20e7d15f15bac = $(`<div id="html_aa76701baed94501a2b20e7d15f15bac" style="width: 100.0%; height: 100.0%;">Lago Como SIMBAD meeting  2012</div>`)[0];
+            popup_2510077524524505b7ffbf38f93f5923.setContent(html_aa76701baed94501a2b20e7d15f15bac);
+
+
+        circle_marker_4a8a0cb97e784a98ac32d8308c84479a.bindPopup(popup_2510077524524505b7ffbf38f93f5923)
+        ;
+
+
+
+
+            var circle_marker_fc674a7015d041cf968f5756f731c0a8 = L.circleMarker(
+                [46.204, 6.1441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_3f261e1338134ff9ae712e3d7f024440 = L.popup({"maxWidth": "100%"});
+
+
+            var html_2ddc766b9f8948acbf4218bf313e761f = $(`<div id="html_2ddc766b9f8948acbf4218bf313e761f" style="width: 100.0%; height: 100.0%;">Geneva Synaptic meeting 2013</div>`)[0];
+            popup_3f261e1338134ff9ae712e3d7f024440.setContent(html_2ddc766b9f8948acbf4218bf313e761f);
+
+
+        circle_marker_fc674a7015d041cf968f5756f731c0a8.bindPopup(popup_3f261e1338134ff9ae712e3d7f024440)
+        ;
+
+
+
+
+            var circle_marker_4e406457d3fc492681413df13e8fbcb2 = L.circleMarker(
+                [43.373, -5.8357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_499b89de6f2c4752b1323131c8809466 = L.popup({"maxWidth": "100%"});
+
+
+            var html_14bbb73bb57d421992da3a066ad06bea = $(`<div id="html_14bbb73bb57d421992da3a066ad06bea" style="width: 100.0%; height: 100.0%;">Oviedo Spanish Neuroscience meeting 2013</div>`)[0];
+            popup_499b89de6f2c4752b1323131c8809466.setContent(html_14bbb73bb57d421992da3a066ad06bea);
+
+
+        circle_marker_4e406457d3fc492681413df13e8fbcb2.bindPopup(popup_499b89de6f2c4752b1323131c8809466)
+        ;
+
+
+
+
+            var circle_marker_5188d4e5a5c94c7d812da69ec41b1c09 = L.circleMarker(
+                [55.95, -3.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_977d28075afb4af8b0553f4f701a3fe7 = L.popup({"maxWidth": "100%"});
+
+
+            var html_77a799b5cb9741b5ba491c49d5c86a9b = $(`<div id="html_77a799b5cb9741b5ba491c49d5c86a9b" style="width: 100.0%; height: 100.0%;">Edinburg British Neuroscience meeting 2015</div>`)[0];
+            popup_977d28075afb4af8b0553f4f701a3fe7.setContent(html_77a799b5cb9741b5ba491c49d5c86a9b);
+
+
+        circle_marker_5188d4e5a5c94c7d812da69ec41b1c09.bindPopup(popup_977d28075afb4af8b0553f4f701a3fe7)
+        ;
+
+
+
+
+            var circle_marker_a237f3dcb9f545968ad0a46fa1eda2d1 = L.circleMarker(
+                [51.5, -0.13],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_d8cc0b4447ce49adad46f3586fcd647e = L.popup({"maxWidth": "100%"});
+
+
+            var html_121d6a92d327421ab08de577fb36be89 = $(`<div id="html_121d6a92d327421ab08de577fb36be89" style="width: 100.0%; height: 100.0%;">London Industrial partnering 2015</div>`)[0];
+            popup_d8cc0b4447ce49adad46f3586fcd647e.setContent(html_121d6a92d327421ab08de577fb36be89);
+
+
+        circle_marker_a237f3dcb9f545968ad0a46fa1eda2d1.bindPopup(popup_d8cc0b4447ce49adad46f3586fcd647e)
+        ;
+
+
+
+
+            var circle_marker_a2f880ec24784eb4b78029aabcd710a5 = L.circleMarker(
+                [32.715736, -117.161087],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_d6b794342f7749c29b37bd7987d8f479 = L.popup({"maxWidth": "100%"});
+
+
+            var html_afe14b038cc04762ba68b3f9603666ab = $(`<div id="html_afe14b038cc04762ba68b3f9603666ab" style="width: 100.0%; height: 100.0%;">San Diego Sfn meeting 2016</div>`)[0];
+            popup_d6b794342f7749c29b37bd7987d8f479.setContent(html_afe14b038cc04762ba68b3f9603666ab);
+
+
+        circle_marker_a2f880ec24784eb4b78029aabcd710a5.bindPopup(popup_d6b794342f7749c29b37bd7987d8f479)
+        ;
+
+
+
+
+            var circle_marker_6a8d9b5d736e423f90da639cad9ef881 = L.circleMarker(
+                [45.47, 9.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_e399760c61884bbea4079c4718099519 = L.popup({"maxWidth": "100%"});
+
+
+            var html_60e4fb34829447f4b853692359e8fcad = $(`<div id="html_60e4fb34829447f4b853692359e8fcad" style="width: 100.0%; height: 100.0%;">Milan Synaptic meeting 2017</div>`)[0];
+            popup_e399760c61884bbea4079c4718099519.setContent(html_60e4fb34829447f4b853692359e8fcad);
+
+
+        circle_marker_6a8d9b5d736e423f90da639cad9ef881.bindPopup(popup_e399760c61884bbea4079c4718099519)
+        ;
+
+
+
+
+            var circle_marker_b4fae668c81441009eb409fc81548c2e = L.circleMarker(
+                [52.486, -1.8997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_0bd1c73611de4458acc325dc76164a9b = L.popup({"maxWidth": "100%"});
+
+
+            var html_d092c3aa641144468275ddc9efc43f17 = $(`<div id="html_d092c3aa641144468275ddc9efc43f17" style="width: 100.0%; height: 100.0%;">Birminham British Neuroscience meeting 2017</div>`)[0];
+            popup_0bd1c73611de4458acc325dc76164a9b.setContent(html_d092c3aa641144468275ddc9efc43f17);
+
+
+        circle_marker_b4fae668c81441009eb409fc81548c2e.bindPopup(popup_0bd1c73611de4458acc325dc76164a9b)
+        ;
+
+
+
+
+            var circle_marker_9e80b3ab856b419196a6a2339a56e3fe = L.circleMarker(
+                [32.615736, -117.161087],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_e7b90380d7be48bd9e98a2a35bcd5213 = L.popup({"maxWidth": "100%"});
+
+
+            var html_3ab0d2e12d8841e3af0429d0c44c0336 = $(`<div id="html_3ab0d2e12d8841e3af0429d0c44c0336" style="width: 100.0%; height: 100.0%;">San Diego Sfn meeting 2018</div>`)[0];
+            popup_e7b90380d7be48bd9e98a2a35bcd5213.setContent(html_3ab0d2e12d8841e3af0429d0c44c0336);
+
+
+        circle_marker_9e80b3ab856b419196a6a2339a56e3fe.bindPopup(popup_e7b90380d7be48bd9e98a2a35bcd5213)
+        ;
+
+
+
+
+            var circle_marker_a0918de1becf4be894f89716b7e0d70a = L.circleMarker(
+                [60.17, 24.94],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2);
+
+
+        var popup_0ebaa6710ae34a6193909906ae94071f = L.popup({"maxWidth": "100%"});
+
+
+            var html_c35d046156e640c0bb8feb69497f5fc4 = $(`<div id="html_c35d046156e640c0bb8feb69497f5fc4" style="width: 100.0%; height: 100.0%;">Helsinki Industrial partnering 2019</div>`)[0];
+            popup_0ebaa6710ae34a6193909906ae94071f.setContent(html_c35d046156e640c0bb8feb69497f5fc4);
+
+
+        circle_marker_a0918de1becf4be894f89716b7e0d70a.bindPopup(popup_0ebaa6710ae34a6193909906ae94071f)
+        ;
+
+
+
+
+            var feature_group_048b0cd3bdd040c6bc9b9a086271cc2d = L.featureGroup(
+                {}
+            ).addTo(map_9b4ac76769654723b8999a69aaf8b4c3);
+
+
+            var circle_marker_796bf6cb4dd64826b556c87e4b6b7459 = L.circleMarker(
+                [51.08, -4.06],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_5f1c36a94c0d45d394f6a76e8142211d = L.popup({"maxWidth": "100%"});
+
+
+            var html_7fefc09e22914701a446c14e4eedea94 = $(`<div id="html_7fefc09e22914701a446c14e4eedea94" style="width: 100.0%; height: 100.0%;">Barnstaple Turism 1999</div>`)[0];
+            popup_5f1c36a94c0d45d394f6a76e8142211d.setContent(html_7fefc09e22914701a446c14e4eedea94);
+
+
+        circle_marker_796bf6cb4dd64826b556c87e4b6b7459.bindPopup(popup_5f1c36a94c0d45d394f6a76e8142211d)
+        ;
+
+
+
+
+            var circle_marker_fe3bfb6e55eb42528936a1a31ac5e3b4 = L.circleMarker(
+                [28.44, -16.31],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_da8d081638024ee484c8609aa73b167f = L.popup({"maxWidth": "100%"});
+
+
+            var html_cc95f5055a424467bf8db971804e7163 = $(`<div id="html_cc95f5055a424467bf8db971804e7163" style="width: 100.0%; height: 100.0%;">Canarias Sport Tournament 2001</div>`)[0];
+            popup_da8d081638024ee484c8609aa73b167f.setContent(html_cc95f5055a424467bf8db971804e7163);
+
+
+        circle_marker_fe3bfb6e55eb42528936a1a31ac5e3b4.bindPopup(popup_da8d081638024ee484c8609aa73b167f)
+        ;
+
+
+
+
+            var circle_marker_b0325e0c2de74a32b8a87e3a10abb59c = L.circleMarker(
+                [52.8477, -8.9895],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_6b970555a5094a7e8c201fe4e5a52e52 = L.popup({"maxWidth": "100%"});
+
+
+            var html_09c04238291b4c93bf395d676d9240aa = $(`<div id="html_09c04238291b4c93bf395d676d9240aa" style="width: 100.0%; height: 100.0%;">Ennish Turism 2006</div>`)[0];
+            popup_6b970555a5094a7e8c201fe4e5a52e52.setContent(html_09c04238291b4c93bf395d676d9240aa);
+
+
+        circle_marker_b0325e0c2de74a32b8a87e3a10abb59c.bindPopup(popup_6b970555a5094a7e8c201fe4e5a52e52)
+        ;
+
+
+
+
+            var circle_marker_4e47201e8c064a58a0f64f47ca95776b = L.circleMarker(
+                [37.197, -3.592],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_dd6caf087c674f87beb7d66636035fce = L.popup({"maxWidth": "100%"});
+
+
+            var html_368754ee67044da0a91508e6c8632771 = $(`<div id="html_368754ee67044da0a91508e6c8632771" style="width: 100.0%; height: 100.0%;">Granada Turism 2009</div>`)[0];
+            popup_dd6caf087c674f87beb7d66636035fce.setContent(html_368754ee67044da0a91508e6c8632771);
+
+
+        circle_marker_4e47201e8c064a58a0f64f47ca95776b.bindPopup(popup_dd6caf087c674f87beb7d66636035fce)
+        ;
+
+
+
+
+            var circle_marker_f2df47ac58354da08bde1f2f482815ef = L.circleMarker(
+                [36.41, 25.43],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_5f221d27daa44baa80d282d8764c732d = L.popup({"maxWidth": "100%"});
+
+
+            var html_68a443d130f84216a369682e7d87e132 = $(`<div id="html_68a443d130f84216a369682e7d87e132" style="width: 100.0%; height: 100.0%;">Santorini Turism 2015</div>`)[0];
+            popup_5f221d27daa44baa80d282d8764c732d.setContent(html_68a443d130f84216a369682e7d87e132);
+
+
+        circle_marker_f2df47ac58354da08bde1f2f482815ef.bindPopup(popup_5f221d27daa44baa80d282d8764c732d)
+        ;
+
+
+
+
+            var circle_marker_2513891c4a8b4412ac354b848e6aeef2 = L.circleMarker(
+                [36.71, 25.3],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_9edbb921977e4c379f3e2b3e02d3577a = L.popup({"maxWidth": "100%"});
+
+
+            var html_c8a11f810413412b9a586b06cbecfd33 = $(`<div id="html_c8a11f810413412b9a586b06cbecfd33" style="width: 100.0%; height: 100.0%;">Ios Turism 2015</div>`)[0];
+            popup_9edbb921977e4c379f3e2b3e02d3577a.setContent(html_c8a11f810413412b9a586b06cbecfd33);
+
+
+        circle_marker_2513891c4a8b4412ac354b848e6aeef2.bindPopup(popup_9edbb921977e4c379f3e2b3e02d3577a)
+        ;
+
+
+
+
+            var circle_marker_1c7fc440dae844a483141e355d48c3ae = L.circleMarker(
+                [35.18, 24.4],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_57d84057edbe4095b23aa530ad1faa5c = L.popup({"maxWidth": "100%"});
+
+
+            var html_f534c9f00e5544da9d46ae20d38aec68 = $(`<div id="html_f534c9f00e5544da9d46ae20d38aec68" style="width: 100.0%; height: 100.0%;">Creta Turism 2015</div>`)[0];
+            popup_57d84057edbe4095b23aa530ad1faa5c.setContent(html_f534c9f00e5544da9d46ae20d38aec68);
+
+
+        circle_marker_1c7fc440dae844a483141e355d48c3ae.bindPopup(popup_57d84057edbe4095b23aa530ad1faa5c)
+        ;
+
+
+
+
+            var circle_marker_b5b211d7e8924634aa8f1d0730981b17 = L.circleMarker(
+                [53.35, -6.26],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_713d7a2eafe4451e82c51c336daeb4d9 = L.popup({"maxWidth": "100%"});
+
+
+            var html_09da86b3962d4777acf4047df567c90b = $(`<div id="html_09da86b3962d4777acf4047df567c90b" style="width: 100.0%; height: 100.0%;">Dublin Turism 2016</div>`)[0];
+            popup_713d7a2eafe4451e82c51c336daeb4d9.setContent(html_09da86b3962d4777acf4047df567c90b);
+
+
+        circle_marker_b5b211d7e8924634aa8f1d0730981b17.bindPopup(popup_713d7a2eafe4451e82c51c336daeb4d9)
+        ;
+
+
+
+
+            var circle_marker_073db14eea8448238d047a4e739f40c1 = L.circleMarker(
+                [50.72, -1.8858],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_cb241abd6c1c4dfaa9d690cd72e2ce6b = L.popup({"maxWidth": "100%"});
+
+
+            var html_e2d42108e96645dbaad445732f9f1357 = $(`<div id="html_e2d42108e96645dbaad445732f9f1357" style="width: 100.0%; height: 100.0%;">Bournemouth Turism 2016</div>`)[0];
+            popup_cb241abd6c1c4dfaa9d690cd72e2ce6b.setContent(html_e2d42108e96645dbaad445732f9f1357);
+
+
+        circle_marker_073db14eea8448238d047a4e739f40c1.bindPopup(popup_cb241abd6c1c4dfaa9d690cd72e2ce6b)
+        ;
+
+
+
+
+            var circle_marker_db01f7e29f7d4f6a89e1d998130e1970 = L.circleMarker(
+                [45.44, 12.33],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_22d0c051cd0e4ae7a2f95c4e609b6646 = L.popup({"maxWidth": "100%"});
+
+
+            var html_e947db2d2c364ed6a2ba89bd5dc95feb = $(`<div id="html_e947db2d2c364ed6a2ba89bd5dc95feb" style="width: 100.0%; height: 100.0%;">Venezia Turism 2017</div>`)[0];
+            popup_22d0c051cd0e4ae7a2f95c4e609b6646.setContent(html_e947db2d2c364ed6a2ba89bd5dc95feb);
+
+
+        circle_marker_db01f7e29f7d4f6a89e1d998130e1970.bindPopup(popup_22d0c051cd0e4ae7a2f95c4e609b6646)
+        ;
+
+
+
+
+            var circle_marker_536c830b4a6543cb8a8ace10cdb82efc = L.circleMarker(
+                [64.18, -21.57],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_953bd07c08ec418aa370b473bf1a7f25 = L.popup({"maxWidth": "100%"});
+
+
+            var html_3e88b697f2c5427998f6c427abc1b4bb = $(`<div id="html_3e88b697f2c5427998f6c427abc1b4bb" style="width: 100.0%; height: 100.0%;">Reikiavik Turism 2017</div>`)[0];
+            popup_953bd07c08ec418aa370b473bf1a7f25.setContent(html_3e88b697f2c5427998f6c427abc1b4bb);
+
+
+        circle_marker_536c830b4a6543cb8a8ace10cdb82efc.bindPopup(popup_953bd07c08ec418aa370b473bf1a7f25)
+        ;
+
+
+
+
+            var circle_marker_65240765cce84cbe94228f2a38828a54 = L.circleMarker(
+                [39.94, 4.11],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_4e18fdff8e364160950ec57f237c2075 = L.popup({"maxWidth": "100%"});
+
+
+            var html_e5a0c4e5cb804deeb7cf5d4ccc6b9eec = $(`<div id="html_e5a0c4e5cb804deeb7cf5d4ccc6b9eec" style="width: 100.0%; height: 100.0%;">Menorca Turism 2017</div>`)[0];
+            popup_4e18fdff8e364160950ec57f237c2075.setContent(html_e5a0c4e5cb804deeb7cf5d4ccc6b9eec);
+
+
+        circle_marker_65240765cce84cbe94228f2a38828a54.bindPopup(popup_4e18fdff8e364160950ec57f237c2075)
+        ;
+
+
+
+
+            var circle_marker_2a0f742921164874a8e538d5bce820c6 = L.circleMarker(
+                [41.895, 3.192],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_ffedd109e4d44942a5839289eb66e92e = L.popup({"maxWidth": "100%"});
+
+
+            var html_5997131f02d94176b7770c476e3af7ba = $(`<div id="html_5997131f02d94176b7770c476e3af7ba" style="width: 100.0%; height: 100.0%;">Girona Turism 2017</div>`)[0];
+            popup_ffedd109e4d44942a5839289eb66e92e.setContent(html_5997131f02d94176b7770c476e3af7ba);
+
+
+        circle_marker_2a0f742921164874a8e538d5bce820c6.bindPopup(popup_ffedd109e4d44942a5839289eb66e92e)
+        ;
+
+
+
+
+            var circle_marker_52eab7a8196b49d2b4401884fc869909 = L.circleMarker(
+                [34.052235, -118.243683],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_dbf6c19373ea4547b712e2a694ff065d = L.popup({"maxWidth": "100%"});
+
+
+            var html_8c1b0b7f127f4715b22016d3c9e946b2 = $(`<div id="html_8c1b0b7f127f4715b22016d3c9e946b2" style="width: 100.0%; height: 100.0%;">Los Angeles Turism 2018</div>`)[0];
+            popup_dbf6c19373ea4547b712e2a694ff065d.setContent(html_8c1b0b7f127f4715b22016d3c9e946b2);
+
+
+        circle_marker_52eab7a8196b49d2b4401884fc869909.bindPopup(popup_dbf6c19373ea4547b712e2a694ff065d)
+        ;
+
+
+
+
+            var circle_marker_15ba0c9cb3864306baf9ea4a34e50f87 = L.circleMarker(
+                [36.169941, -115.139832],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_a29d485389044a4486ad9750df13c249 = L.popup({"maxWidth": "100%"});
+
+
+            var html_fb11b3af6b3a464c9e3683a3c3f83dc5 = $(`<div id="html_fb11b3af6b3a464c9e3683a3c3f83dc5" style="width: 100.0%; height: 100.0%;">Las Vegas Turism 2018</div>`)[0];
+            popup_a29d485389044a4486ad9750df13c249.setContent(html_fb11b3af6b3a464c9e3683a3c3f83dc5);
+
+
+        circle_marker_15ba0c9cb3864306baf9ea4a34e50f87.bindPopup(popup_a29d485389044a4486ad9750df13c249)
+        ;
+
+
+
+
+            var circle_marker_087606b388f84705853a5e30842496d9 = L.circleMarker(
+                [39.73, 3.29],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_0987bcf7bbbf4aaaa02334e3740a0550 = L.popup({"maxWidth": "100%"});
+
+
+            var html_92b04ee8cd83423f8e6fe20c5a01ac7d = $(`<div id="html_92b04ee8cd83423f8e6fe20c5a01ac7d" style="width: 100.0%; height: 100.0%;">Mallorca Turism 2018</div>`)[0];
+            popup_0987bcf7bbbf4aaaa02334e3740a0550.setContent(html_92b04ee8cd83423f8e6fe20c5a01ac7d);
+
+
+        circle_marker_087606b388f84705853a5e30842496d9.bindPopup(popup_0987bcf7bbbf4aaaa02334e3740a0550)
+        ;
+
+
+
+
+            var circle_marker_ec1b5491d7d446adb44be5d92df6d8b9 = L.circleMarker(
+                [52.3976, 4.93],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_1c32b498e960441b84ca700c291fdf12 = L.popup({"maxWidth": "100%"});
+
+
+            var html_7a33e0a4db4b42a2943e8d87cd45c9d5 = $(`<div id="html_7a33e0a4db4b42a2943e8d87cd45c9d5" style="width: 100.0%; height: 100.0%;">Amsterdam Turism 2018</div>`)[0];
+            popup_1c32b498e960441b84ca700c291fdf12.setContent(html_7a33e0a4db4b42a2943e8d87cd45c9d5);
+
+
+        circle_marker_ec1b5491d7d446adb44be5d92df6d8b9.bindPopup(popup_1c32b498e960441b84ca700c291fdf12)
+        ;
+
+
+
+
+            var circle_marker_21c4ec9cbdbf430b822fad674add83e1 = L.circleMarker(
+                [40.712776, -74.005974],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_6383d3a09c4340078b4c2c669442777c = L.popup({"maxWidth": "100%"});
+
+
+            var html_9911350ada3645089bcfaae734036ae1 = $(`<div id="html_9911350ada3645089bcfaae734036ae1" style="width: 100.0%; height: 100.0%;">New York Turism 2019</div>`)[0];
+            popup_6383d3a09c4340078b4c2c669442777c.setContent(html_9911350ada3645089bcfaae734036ae1);
+
+
+        circle_marker_21c4ec9cbdbf430b822fad674add83e1.bindPopup(popup_6383d3a09c4340078b4c2c669442777c)
+        ;
+
+
+
+
+            var circle_marker_c96e0359f449452eabb01232a7713c41 = L.circleMarker(
+                [38.79, 0.1664],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_a6f0db64263044508ea19099057054ff = L.popup({"maxWidth": "100%"});
+
+
+            var html_28f4ce4888a14cea9ef1ab0e77011396 = $(`<div id="html_28f4ce4888a14cea9ef1ab0e77011396" style="width: 100.0%; height: 100.0%;">Javea Turism 2019</div>`)[0];
+            popup_a6f0db64263044508ea19099057054ff.setContent(html_28f4ce4888a14cea9ef1ab0e77011396);
+
+
+        circle_marker_c96e0359f449452eabb01232a7713c41.bindPopup(popup_a6f0db64263044508ea19099057054ff)
+        ;
+
+
+
+
+            var circle_marker_22617d45e37145ff9738fa12ef64cb07 = L.circleMarker(
+                [40.41, -3.95],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_3a16d171f53540cf8a732f5b43831afe = L.popup({"maxWidth": "100%"});
+
+
+            var html_4e76c83c8028436f917ed62fa03402fb = $(`<div id="html_4e76c83c8028436f917ed62fa03402fb" style="width: 100.0%; height: 100.0%;">Madrid Turism 2020</div>`)[0];
+            popup_3a16d171f53540cf8a732f5b43831afe.setContent(html_4e76c83c8028436f917ed62fa03402fb);
+
+
+        circle_marker_22617d45e37145ff9738fa12ef64cb07.bindPopup(popup_3a16d171f53540cf8a732f5b43831afe)
+        ;
+
+
+
+
+            var circle_marker_ac03053f5cf44bb3a4a55950c75c9ebd = L.circleMarker(
+                [36.07, -112.11],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_048b0cd3bdd040c6bc9b9a086271cc2d);
+
+
+        var popup_05cc475433fe4129aeb99abc038bf877 = L.popup({"maxWidth": "100%"});
+
+
+            var html_122007431ab246aaa5370407ccf2ecf6 = $(`<div id="html_122007431ab246aaa5370407ccf2ecf6" style="width: 100.0%; height: 100.0%;">Gran Canyon Turism 2018</div>`)[0];
+            popup_05cc475433fe4129aeb99abc038bf877.setContent(html_122007431ab246aaa5370407ccf2ecf6);
+
+
+        circle_marker_ac03053f5cf44bb3a4a55950c75c9ebd.bindPopup(popup_05cc475433fe4129aeb99abc038bf877)
+        ;
+
+
+
+
+            var layer_control_ccd88aa4b12342f9acdb59726277a811 = {
+                base_layers : {
+                    "stamenwatercolor" : tile_layer_8ce150a256494b89a28144b0a97ba801,
+                },
+                overlays :  {
+                    "Lived in" : feature_group_4949545d6c7f40f0b9628d5074b4d71b,
+                    "Work Travel" : feature_group_5ef4b51e8b1d4d95827d41e66ead6ac2,
+                    "Turism Trip" : feature_group_048b0cd3bdd040c6bc9b9a086271cc2d,
+                },
+            };
+            L.control.layers(
+                layer_control_ccd88aa4b12342f9acdb59726277a811.base_layers,
+                layer_control_ccd88aa4b12342f9acdb59726277a811.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_9b4ac76769654723b8999a69aaf8b4c3);
+
+</script>
